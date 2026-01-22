@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 937687734e410a444a7a2a21bc6c06d6, type: 3}
+  m_Name: ShieldAzure
+  m_EditorClassIdentifier: 
+  weaponName: "Khi\xEAn Lam V\u1EC7"
+  icon: {fileID: 21300000, guid: c0feb9cca0fb7404aad5545e601542bf, type: 3}
+  slot: 1
+  equipPrefab: {fileID: 1483536752946232876, guid: aea2f16ffb3d0bd47ab8251dec252449, type: 3}
+  weaponTypeID: 9
+  isTwoHanded: 0
+  rarity: 0
+  requiredLevel: 1
+  saveKey: ShieldAzure
+  arrowPrefabOverride: {fileID: 0}
+  arrowType: 0
+  skill1: {fileID: 0}
+  skill2: {fileID: 0}
+  baseDamage: 10
+  baseStrength: 5
+  baseAgility: 5
+  baseVitality: 5
+  baseEnergy: 5
+  pickupPrefab: {fileID: 1483536752946232876, guid: aea2f16ffb3d0bd47ab8251dec252449, type: 3}

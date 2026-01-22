@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 721166a0097e22e4194818df1328d706, type: 3}
+  m_Name: Saber
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  maxMana: 50
+  attack: 5
+  defense: 5
+  speed: 10
+  RunSpeed: 20
+  atackRange: 2
+  level: 1
+  currentExp: 0
+  expToNextLevel: 150
+  statPoints: 5
+  strength: 1
+  agility: 1
+  vitality: 1
+  energy: 1

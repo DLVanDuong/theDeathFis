@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 937687734e410a444a7a2a21bc6c06d6, type: 3}
+  m_Name: ArrowThunderclare
+  m_EditorClassIdentifier: 
+  weaponName: "M\u0169i T\xEAn L\xF4i Minh"
+  icon: {fileID: 21300000, guid: 45d1335933fd4194d9ea038cd3bd49a3, type: 3}
+  slot: 0
+  equipPrefab: {fileID: 8899912401819592404, guid: 4d983cdf812bb4c4e8214718b448430a, type: 3}
+  weaponTypeID: 8
+  isTwoHanded: 0
+  rarity: 0
+  requiredLevel: 1
+  saveKey: ArrowThunderclare
+  arrowPrefabOverride: {fileID: 7475443745656007701, guid: ee3f4c764ae418f438b697b4a1b2ee2b, type: 3}
+  arrowType: 1
+  skill1: {fileID: 0}
+  skill2: {fileID: 0}
+  baseDamage: 10
+  baseStrength: 5
+  baseAgility: 5
+  baseVitality: 5
+  baseEnergy: 5
+  pickupPrefab: {fileID: 8899912401819592404, guid: 4d983cdf812bb4c4e8214718b448430a, type: 3}

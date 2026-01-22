@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eac51aef732cd74e9fb9451f2a13294, type: 3}
+  m_Name: Aurakar
+  m_EditorClassIdentifier: 
+  name: Kim Sa Long
+  health: 100
+  damage: 10
+  speed: 2
+  runSpeed: 4
+  attackRange: 2
+  attackCooldown: 1
+  singhtRange: 5
+  singhtAngle: 90
+  chaseRange: 5
+  losePlayerRange: 10
+  animationData: {fileID: 0}
+  abilities: []
+  abilityCooldown: 8
+  minAbilityDistance: 5
+  maxAbilityDistance: 15

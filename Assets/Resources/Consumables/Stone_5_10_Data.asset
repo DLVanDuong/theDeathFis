@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c38afed80bb209458cd982b9006cd47, type: 3}
+  m_Name: Stone_5_10_Data
+  m_EditorClassIdentifier: 
+  stoneType: 1
+  displayName: "\u0110\xE1 C\u01B0\u1EDDng H\xF3a 5 - 10"
+  nameColor: {r: 0.56793576, g: 0.0509078, b: 0.9811321, a: 1}

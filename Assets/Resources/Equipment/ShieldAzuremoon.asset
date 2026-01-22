@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 937687734e410a444a7a2a21bc6c06d6, type: 3}
+  m_Name: ShieldAzuremoon
+  m_EditorClassIdentifier: 
+  weaponName: "Khi\xEAn Lam Nguy\u1EC7t"
+  icon: {fileID: 21300000, guid: d8c7e74439f56d1428b75e71c8101027, type: 3}
+  slot: 1
+  equipPrefab: {fileID: 927373023362616675, guid: ef1671545665c2f4daf12e394d0143f8, type: 3}
+  weaponTypeID: 9
+  isTwoHanded: 0
+  rarity: 0
+  requiredLevel: 1
+  saveKey: ShieldAzuremoon
+  arrowPrefabOverride: {fileID: 0}
+  arrowType: 0
+  skill1: {fileID: 0}
+  skill2: {fileID: 0}
+  baseDamage: 10
+  baseStrength: 5
+  baseAgility: 5
+  baseVitality: 5
+  baseEnergy: 5
+  pickupPrefab: {fileID: 927373023362616675, guid: ef1671545665c2f4daf12e394d0143f8, type: 3}

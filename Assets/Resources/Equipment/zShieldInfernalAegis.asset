@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 937687734e410a444a7a2a21bc6c06d6, type: 3}
+  m_Name: zShieldInfernalAegis
+  m_EditorClassIdentifier: 
+  weaponName: "Khi\xEAn Vi\xEAm T\xE2m"
+  icon: {fileID: 21300000, guid: a4c7d9df4c746dc4d8c5926ea236976e, type: 3}
+  slot: 1
+  equipPrefab: {fileID: 831028450863158320, guid: 687987f4708e94347a8a2d4f7a133b85, type: 3}
+  weaponTypeID: 9
+  isTwoHanded: 0
+  rarity: 0
+  requiredLevel: 1
+  saveKey: zShieldInfernalAegis
+  arrowPrefabOverride: {fileID: 0}
+  arrowType: 0
+  skill1: {fileID: 0}
+  skill2: {fileID: 0}
+  baseDamage: 10
+  baseStrength: 5
+  baseAgility: 5
+  baseVitality: 5
+  baseEnergy: 5
+  pickupPrefab: {fileID: 831028450863158320, guid: 687987f4708e94347a8a2d4f7a133b85, type: 3}
