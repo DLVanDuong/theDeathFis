@@ -251,6 +251,10 @@ public class EquipmentManager : MonoBehaviour
                 GameObject spawned = Instantiate(inst.template.equipPrefab, parent);
                 spawnedObjects[slot] = spawned;
 
+                var vfx = spawned.GetComponentInChildren<WeaponUpgradeVFX>(true);
+                if (vfx != null)
+                    vfx.Apply(inst);
+
                 if (inst.template.weaponTypeID == 8)
                 {
                     spawned.transform.localPosition = new Vector3(0f, 0f, 0f);
@@ -470,5 +474,23 @@ public class EquipmentManager : MonoBehaviour
     public void DisableCurrentWeaponHitbox() { if (currentWeaponHitbox) currentWeaponHitbox.DisableHitbox(); }
 
     public Transform GetWeaponHoldPointL() => weaponHoldPointL;
-    public Transform GetWeaponHoldPointR() => weaponHoldPointR;  
+    public Transform GetWeaponHoldPointR() => weaponHoldPointR;
+    public void RefreshEquippedWeaponVFX()
+    {
+        // RightHand
+        if (spawnedObjects.TryGetValue(EquipmentSlot.RightHand, out var rightObj) && rightObj != null &&
+            equippedWeaponInstances.TryGetValue(EquipmentSlot.RightHand, out var rightInst) && rightInst != null)
+        {
+            var vfx = rightObj.GetComponentInChildren<WeaponUpgradeVFX>(true);
+            if (vfx != null) vfx.Apply(rightInst);
+        }
+
+        // LeftHand
+        if (spawnedObjects.TryGetValue(EquipmentSlot.LeftHand, out var leftObj) && leftObj != null &&
+            equippedWeaponInstances.TryGetValue(EquipmentSlot.LeftHand, out var leftInst) && leftInst != null)
+        {
+            var vfx = leftObj.GetComponentInChildren<WeaponUpgradeVFX>(true);
+            if (vfx != null) vfx.Apply(leftInst);
+        }
+    }
 }

@@ -290,6 +290,7 @@ Yêu cầu Lv: {current.requiredLevel}";
                         }
 
                         current.UpgradeOnce();
+                        equipMgr?.RefreshEquippedWeaponVFX();
 
                         InventoryUI.Instance?.RefreshUI();
                         Show(current, DetailContext.Bag);

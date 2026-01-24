@@ -1163,8 +1163,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapons: []
-  stone0to5: 0
-  stone5to10: 0
+  stone0to5: 100
+  stone5to10: 100
 --- !u!114 &26730867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75846,31 +75846,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6002141117062592979, guid: 723e8a28e283e4f4daca1a34bca39b9d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 692.61
+      value: 695.61316
       objectReference: {fileID: 0}
     - target: {fileID: 6002141117062592979, guid: 723e8a28e283e4f4daca1a34bca39b9d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.79
+      value: 20.41523
       objectReference: {fileID: 0}
     - target: {fileID: 6002141117062592979, guid: 723e8a28e283e4f4daca1a34bca39b9d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 463.73
+      value: 463.13553
       objectReference: {fileID: 0}
     - target: {fileID: 6002141117062592979, guid: 723e8a28e283e4f4daca1a34bca39b9d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.64494944
+      value: -0.0008409003
       objectReference: {fileID: 0}
     - target: {fileID: 6002141117062592979, guid: 723e8a28e283e4f4daca1a34bca39b9d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.23115957
+      value: -0.0027182288
       objectReference: {fileID: 0}
     - target: {fileID: 6002141117062592979, guid: 723e8a28e283e4f4daca1a34bca39b9d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.65484667
+      value: 0.99727345
       objectReference: {fileID: 0}
     - target: {fileID: 6002141117062592979, guid: 723e8a28e283e4f4daca1a34bca39b9d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.31903204
+      value: -0.07373981
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
