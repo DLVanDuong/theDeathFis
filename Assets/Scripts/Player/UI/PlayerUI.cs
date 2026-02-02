@@ -71,7 +71,7 @@ public class PlayerUI : MonoBehaviour
 
         int finalAtk = DamageCalculator.GetFinalDamage(stats, bonus);
 
-        if (atkCharacter) atkCharacter.text = $"ATK: {finalAtk}";
+        if (atkCharacter) atkCharacter.text = $"Tấn Công: {finalAtk}";
 
         int finalStr = (int)stats.strength + bonus.str;
         int finalAgi = (int)stats.agility + bonus.agi;
@@ -79,18 +79,18 @@ public class PlayerUI : MonoBehaviour
         int finalEne = (int)stats.energy + bonus.ene;
              
         // Hiển thị UI
-        if (levelText) levelText.text = $"Level: {stats.level}";
+        if (levelText) levelText.text = $"Cấp Độ: {stats.level}";
         if (levelTexts) levelTexts.text = $"{stats.level}";
-        if (expText) expText.text = $"EXP: {stats.exp:F0} / {stats.expToNextLevel:F0}";
+        if (expText) expText.text = $"Kinh nghiệm: {stats.exp:F0} / {stats.expToNextLevel:F0}";
         if (statPointsText) statPointsText.text = $"Điểm cộng: {stats.statPoints}";
-        if (atkCharacter) atkCharacter.text = $"ATK: {finalAtk}";
+        if (atkCharacter) atkCharacter.text = $"Tấn Công: {finalAtk}";
         if (strengthText) strengthText.text = $"Sức mạnh: {finalStr}";
         if (agilityText) agilityText.text = $"Nhanh nhẹn: {finalAgi}";
         if (vitalityText) vitalityText.text = $"Thể lực: {finalVit}";
         if (energyText) energyText.text = $"Năng lượng: {finalEne}";
 
-        if (hpCharacter) hpCharacter.text = $"HP: {Mathf.CeilToInt(stats.currentHealth)} / {Mathf.CeilToInt(stats.maxHealth)}";
-        if (mpCharacter) mpCharacter.text = $"MP: {Mathf.CeilToInt(stats.currentMana)} / {Mathf.CeilToInt(stats.maxMana)}";
+        if (hpCharacter) hpCharacter.text = $"Máu: {Mathf.CeilToInt(stats.currentHealth)} / {Mathf.CeilToInt(stats.maxHealth)}";
+        if (mpCharacter) mpCharacter.text = $"Năng Lượng: {Mathf.CeilToInt(stats.currentMana)} / {Mathf.CeilToInt(stats.maxMana)}";
     }
     void Update()
     {

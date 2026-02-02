@@ -81,6 +81,7 @@ public class ShopUIController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1f;
     }
+
     public void GenerateShopItems()
     {
         currentItems.Clear();
@@ -165,10 +166,10 @@ public class ShopUIController : MonoBehaviour
     {
         switch (rarity)
         {
-            case WeaponRarity.Common: return Random.Range(1, 11);
-            case WeaponRarity.Rare: return Random.Range(10, 101);
-            case WeaponRarity.Epic: return Random.Range(100, 1001);
-            case WeaponRarity.Legendary: return Random.Range(1000, 10000);
+            case WeaponRarity.Common: return Random.Range(5, 11);
+            case WeaponRarity.Rare: return Random.Range(12, 101);
+            case WeaponRarity.Epic: return Random.Range(102, 1001);
+            case WeaponRarity.Legendary: return Random.Range(1002, 9999);
             case WeaponRarity.Mythic: return 10000;
             default: return 10;
         }

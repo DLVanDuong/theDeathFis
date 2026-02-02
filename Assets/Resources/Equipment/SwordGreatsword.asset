@@ -25,7 +25,7 @@ MonoBehaviour:
   arrowType: 0
   skill1: {fileID: 11400000, guid: 87e45da4beb60db4fbb823d4b41733df, type: 2}
   skill2: {fileID: 11400000, guid: 359e91050d318c246bbe147abb64e9e8, type: 2}
-  baseDamage: 10
+  baseDamage: 18
   baseStrength: 5
   baseAgility: 5
   baseVitality: 5

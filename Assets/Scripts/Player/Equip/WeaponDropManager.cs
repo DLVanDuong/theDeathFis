@@ -30,6 +30,8 @@ public class WeaponDropManager : MonoBehaviour
 
         ApplyRandomStats(inst);
 
+        inst.CaptureRolledBase();
+
         if (inst.rarity == WeaponRarity.Legendary && legendarySkills != null && legendarySkills.Length > 0)
         {
             SkillData special = legendarySkills[Random.Range(0, legendarySkills.Length)];

@@ -264,6 +264,8 @@ public class EnemyHealth : MonoBehaviour
                 inst.requiredLevel = enemyLevel;
                 inst.damage += Mathf.RoundToInt(enemyLevel * 1.5f);
 
+                inst.CaptureRolledBase();             
+
                 if (weaponData.pickupPrefab != null)
                 {
                     var obj = Instantiate(weaponData.pickupPrefab, dropPos, Quaternion.identity);
@@ -283,6 +285,7 @@ public class EnemyHealth : MonoBehaviour
                         case WeaponRarity.Rare: rarityColor = Color.cyan; break;
                         case WeaponRarity.Epic: rarityColor = new Color(0.7f, 0.2f, 1f); break;
                         case WeaponRarity.Legendary: rarityColor = new Color(1f, 0.8f, 0f); break;
+                        case WeaponRarity.Mythic: rarityColor = new Color(1f, 0.5f, 0.2f); break;
                     }
 
                     var renderer = obj.GetComponentInChildren<Renderer>();

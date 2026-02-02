@@ -122,6 +122,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1649971028671782482}
     m_Modifications:
+    - target: {fileID: 3041246187817539209, guid: fb2a94bf5f187194fabe0f9a95c47f65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3041246187817539209, guid: fb2a94bf5f187194fabe0f9a95c47f65, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3041246187817539209, guid: fb2a94bf5f187194fabe0f9a95c47f65, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3557683052495198161, guid: fb2a94bf5f187194fabe0f9a95c47f65, type: 3}
       propertyPath: m_Name
       value: worldNameText

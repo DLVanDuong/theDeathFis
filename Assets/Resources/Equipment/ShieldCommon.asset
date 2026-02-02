@@ -25,9 +25,9 @@ MonoBehaviour:
   arrowType: 0
   skill1: {fileID: 0}
   skill2: {fileID: 0}
-  baseDamage: 0
-  baseStrength: 2
-  baseAgility: 2
-  baseVitality: 2
-  baseEnergy: 2
+  baseDamage: 10
+  baseStrength: 5
+  baseAgility: 5
+  baseVitality: 5
+  baseEnergy: 5
   pickupPrefab: {fileID: 4194323483264803425, guid: 7c7da1f49932da64a97904e8cb275f76, type: 3}

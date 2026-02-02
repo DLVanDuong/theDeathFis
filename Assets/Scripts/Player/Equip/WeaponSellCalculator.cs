@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public static class WeaponSellCalculator
 {
@@ -16,8 +16,8 @@ public static class WeaponSellCalculator
             _ => 1f
         };
 
-        int basePrice = inst.requiredLevel * 10;
-        int upgradeBonus = inst.upgradeLevel * 15;
+        int basePrice = inst.requiredLevel * 10; // cơ bản 10 vàng mỗi level yêu cầu
+        int upgradeBonus = inst.upgradeLevel * 15; // mỗi cấp nâng cấp thêm 15 vàng
 
         int price = Mathf.RoundToInt((basePrice + upgradeBonus) * rarityMul);
         return Mathf.Max(1, price);

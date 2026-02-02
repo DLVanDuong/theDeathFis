@@ -105,11 +105,11 @@ public class WeaponDetailUI : MonoBehaviour
         if (statsText)
         {
             statsText.text =
-$@"DMG: {current.damage}
-STR: {current.strength}
-AGI: {current.agility}
-VIT: {current.vitality}
-ENE: {current.energy}
+$@"Tấn Công: {current.damage}
+Sức Mạnh: {current.strength}
+Nhanh Nhẹn: {current.agility}
+Thể Lực: {current.vitality}
+Năng Lượng: {current.energy}
 Yêu cầu Lv: {current.requiredLevel}";
         }
 
@@ -288,8 +288,11 @@ Yêu cầu Lv: {current.requiredLevel}";
                             }
                             return;
                         }
+                        current.CaptureRolledBase();
 
+                        // ✅ rồi mới nâng cấp
                         current.UpgradeOnce();
+
                         equipMgr?.RefreshEquippedWeaponVFX();
 
                         InventoryUI.Instance?.RefreshUI();
