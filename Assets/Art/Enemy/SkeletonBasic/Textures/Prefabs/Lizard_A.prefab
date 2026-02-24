@@ -473,6 +473,13 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 10c398faad189b44fa7523174a932dce, type: 2}
     - {fileID: 11400000, guid: 08e3b14e8866fa2458917f640c1b15c5, type: 2}
     dropChance: 20
+  - itemDatas:
+    - {fileID: 11400000, guid: 005d5189638c6f942b68bfcd49524cc0, type: 2}
+    - {fileID: 11400000, guid: e8b053dd443bd2446b84377e1e58170e, type: 2}
+    - {fileID: 11400000, guid: fb294aac88842af438b3fa787abc7ad0, type: 2}
+    - {fileID: 11400000, guid: dfa9e12d0c0889442bf916997c846822, type: 2}
+    - {fileID: 11400000, guid: 28b952dbd19d3dc498406d86724ca669, type: 2}
+    dropChance: 5
   weaponDropManager: {fileID: 0}
 --- !u!114 &6900557617240276085
 MonoBehaviour:

@@ -4832,6 +4832,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4905,7 +4908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2887783377230210846
 Transform:
   m_ObjectHideFlags: 0
@@ -4916,7 +4919,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5379901578649737645}
@@ -4930,7 +4933,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2705533495200665743}
   serializedVersion: 8
-  lengthInSec: 0.1
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -4938,7 +4941,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -5005,7 +5008,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.16
+      scalar: 0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5058,7 +5061,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5177,7 +5180,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 3
       scalar: 0.1
-      minScalar: 0.02
+      minScalar: 0.01
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -9663,6 +9666,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

@@ -255,6 +255,12 @@ public class EquipmentManager : MonoBehaviour
                 if (vfx != null)
                     vfx.Apply(inst);
 
+                var upVfx = spawned.GetComponentInChildren<WeaponUpgradeVFX>(true);
+                if (upVfx != null) upVfx.Apply(inst);
+
+                var eleVfx = spawned.GetComponentInChildren<WeaponElementVFX>(true);
+                if (eleVfx != null) eleVfx.Apply(inst);
+
                 if (inst.template.weaponTypeID == 8)
                 {
                     spawned.transform.localPosition = new Vector3(0f, 0f, 0f);
@@ -481,16 +487,22 @@ public class EquipmentManager : MonoBehaviour
         if (spawnedObjects.TryGetValue(EquipmentSlot.RightHand, out var rightObj) && rightObj != null &&
             equippedWeaponInstances.TryGetValue(EquipmentSlot.RightHand, out var rightInst) && rightInst != null)
         {
-            var vfx = rightObj.GetComponentInChildren<WeaponUpgradeVFX>(true);
-            if (vfx != null) vfx.Apply(rightInst);
+            var up = rightObj.GetComponentInChildren<WeaponUpgradeVFX>(true);
+            if (up != null) up.Apply(rightInst);
+
+            var ele = rightObj.GetComponentInChildren<WeaponElementVFX>(true);
+            if (ele != null) ele.Apply(rightInst);
         }
 
         // LeftHand
         if (spawnedObjects.TryGetValue(EquipmentSlot.LeftHand, out var leftObj) && leftObj != null &&
             equippedWeaponInstances.TryGetValue(EquipmentSlot.LeftHand, out var leftInst) && leftInst != null)
         {
-            var vfx = leftObj.GetComponentInChildren<WeaponUpgradeVFX>(true);
-            if (vfx != null) vfx.Apply(leftInst);
+            var up = leftObj.GetComponentInChildren<WeaponUpgradeVFX>(true);
+            if (up != null) up.Apply(leftInst);
+
+            var ele = leftObj.GetComponentInChildren<WeaponElementVFX>(true);
+            if (ele != null) ele.Apply(leftInst);
         }
     }
 }

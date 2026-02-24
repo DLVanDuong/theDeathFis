@@ -27,6 +27,9 @@ public class WeaponDetailUI : MonoBehaviour
     public Sprite stone0to5Sprite;          // icon đá 0->5
     public Sprite stone5to10Sprite;         // icon đá 5->10
 
+    [Header("Element Stone (Inlaid) UI")]
+    public Image elementStoneIcon;          // icon nguyên tố đã khảm
+    public Sprite windIcon, thunderIcon, fireIcon, earthIcon;
 
     [Header("Sell (Bag Only)")]
     public Button sellButton;           // KÉO nút Sell vào đây
@@ -341,6 +344,7 @@ Yêu cầu Lv: {current.requiredLevel}";
 
             if (hintText) hintText.text = "";
         }
+        RefreshInlaidElementUI();
     }
 
     private EquipmentSlot TargetSlotOf(WeaponInstance inst)
@@ -358,5 +362,32 @@ Yêu cầu Lv: {current.requiredLevel}";
             return EquipmentSlot.LeftHand;
 
         return EquipmentSlot.RightHand;
+    }
+    private Sprite GetElementStoneSprite(UpgradeStoneType t)
+    {
+        switch (t)
+        {
+            case UpgradeStoneType.Stone_Wind: return windIcon;
+            case UpgradeStoneType.Stone_Thunder: return thunderIcon;
+            case UpgradeStoneType.Stone_Fire: return fireIcon;
+            case UpgradeStoneType.Stone_Earth: return earthIcon;
+            default: return null;
+        }
+    }
+
+    private void RefreshInlaidElementUI()
+    {
+        if (!elementStoneIcon) return;
+
+        bool show = (current != null && current.hasElementStone);
+        if (!show)
+        {
+            elementStoneIcon.enabled = false;   // ✅ ẨN khi chưa khảm
+            elementStoneIcon.sprite = null;
+            return;
+        }
+
+        elementStoneIcon.sprite = GetElementStoneSprite(current.elementStone);
+        elementStoneIcon.enabled = (elementStoneIcon.sprite != null); // ✅ CHỈ HIỆN khi có sprite
     }
 }

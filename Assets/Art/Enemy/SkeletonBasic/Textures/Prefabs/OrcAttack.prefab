@@ -762,7 +762,7 @@ MonoBehaviour:
   bossExpMultiplier: 2
   enemyType: 0
   isBoss: 0
-  coinPrefab: {fileID: 0}
+  coinPrefab: {fileID: 1000011365394840, guid: 5142a683d65bbf84abea6f07db9099c7, type: 3}
   minCoin: 1
   maxCoin: 2
   stone0to5Prefab: {fileID: 1649971028671782476, guid: 75baa537fa69bfd45ab1731ba055cc0d, type: 3}
@@ -771,44 +771,42 @@ MonoBehaviour:
   stone5to10Chance: 10
   dropTable:
   - itemDatas:
-    - {fileID: 11400000, guid: 5837c2467f0c7444a92e73acfadd16cc, type: 2}
+    - {fileID: 11400000, guid: 73fb8135313a54b43beadcfd90b8fbaa, type: 2}
+    - {fileID: 11400000, guid: 5924ebb2db5c2b341bdadae3ca501135, type: 2}
     dropChance: 100
   - itemDatas:
     - {fileID: 11400000, guid: a5161ccff461fce4aa51419fb04e25e5, type: 2}
-    dropChance: 100
-  - itemDatas:
-    - {fileID: 11400000, guid: 5837c2467f0c7444a92e73acfadd16cc, type: 2}
-    dropChance: 100
-  - itemDatas:
+    - {fileID: 11400000, guid: 32291164d66f0de469ca1676d5781717, type: 2}
+    - {fileID: 11400000, guid: be02b4784c867104890ab5bbe4ea9c0a, type: 2}
+    - {fileID: 11400000, guid: 3eb222f6b711f4e47afc0cd4312adf8e, type: 2}
     - {fileID: 11400000, guid: dc39e120aaa574748b6151f00acb4c47, type: 2}
-    dropChance: 100
-  - itemDatas:
+    - {fileID: 11400000, guid: c6f0d7f26fb208c48a06e06a43939417, type: 2}
+    - {fileID: 11400000, guid: a8fb1b2ef685dfc4f90e17a01b90346e, type: 2}
+    - {fileID: 11400000, guid: c290b02e90c6bc44aa450b6bae538d79, type: 2}
+    - {fileID: 11400000, guid: cc12c7809a308b045ad35509e56eb432, type: 2}
+    - {fileID: 11400000, guid: bbfbd33eaf49d264dba5c8146fd5a455, type: 2}
+    - {fileID: 11400000, guid: c05c0ae3444460f4183a77e3fa1c6eb0, type: 2}
     - {fileID: 11400000, guid: 043fcb09c380d9648b86a33dcd32aef3, type: 2}
-    dropChance: 100
-  - itemDatas:
-    - {fileID: 11400000, guid: 043fcb09c380d9648b86a33dcd32aef3, type: 2}
-    dropChance: 100
-  - itemDatas:
+    - {fileID: 11400000, guid: c87f6a11b801f504393b597fefe02936, type: 2}
+    - {fileID: 11400000, guid: 0464acf832c10e94d971f2e1191cbbd1, type: 2}
+    - {fileID: 11400000, guid: 4d080d10c0f3c234fa5d8ac3a95d72d8, type: 2}
+    - {fileID: 11400000, guid: 5096a469ff0353f408963049fb39abfd, type: 2}
+    - {fileID: 11400000, guid: 137580e616fd1ec44a6a6e90ba54470e, type: 2}
+    - {fileID: 11400000, guid: f8e53920a68940744b51f76ce7d955b0, type: 2}
+    - {fileID: 11400000, guid: 9dc70d052f408844994a69aad99ddf0b, type: 2}
     - {fileID: 11400000, guid: 5837c2467f0c7444a92e73acfadd16cc, type: 2}
-    dropChance: 100
+    - {fileID: 11400000, guid: 78822779a43b184439ae0a4340116f19, type: 2}
+    - {fileID: 11400000, guid: 181807b5eacd8d04895f87bf9c08d1c6, type: 2}
+    - {fileID: 11400000, guid: 10c398faad189b44fa7523174a932dce, type: 2}
+    - {fileID: 11400000, guid: 08e3b14e8866fa2458917f640c1b15c5, type: 2}
+    dropChance: 20
   - itemDatas:
-    - {fileID: 11400000, guid: 5837c2467f0c7444a92e73acfadd16cc, type: 2}
-    dropChance: 100
-  - itemDatas:
-    - {fileID: 11400000, guid: 5837c2467f0c7444a92e73acfadd16cc, type: 2}
-    dropChance: 100
-  - itemDatas:
-    - {fileID: 11400000, guid: 5837c2467f0c7444a92e73acfadd16cc, type: 2}
-    dropChance: 100
-  - itemDatas:
-    - {fileID: 11400000, guid: 5837c2467f0c7444a92e73acfadd16cc, type: 2}
-    dropChance: 100
-  - itemDatas:
-    - {fileID: 11400000, guid: 5837c2467f0c7444a92e73acfadd16cc, type: 2}
-    dropChance: 100
-  - itemDatas:
-    - {fileID: 11400000, guid: 5837c2467f0c7444a92e73acfadd16cc, type: 2}
-    dropChance: 100
+    - {fileID: 11400000, guid: 005d5189638c6f942b68bfcd49524cc0, type: 2}
+    - {fileID: 11400000, guid: e8b053dd443bd2446b84377e1e58170e, type: 2}
+    - {fileID: 11400000, guid: fb294aac88842af438b3fa787abc7ad0, type: 2}
+    - {fileID: 11400000, guid: dfa9e12d0c0889442bf916997c846822, type: 2}
+    - {fileID: 11400000, guid: 28b952dbd19d3dc498406d86724ca669, type: 2}
+    dropChance: 5
   weaponDropManager: {fileID: 0}
 --- !u!114 &5514011575953176378
 MonoBehaviour:

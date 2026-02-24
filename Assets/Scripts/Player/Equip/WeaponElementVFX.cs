@@ -2,63 +2,53 @@ using UnityEngine;
 
 public class WeaponElementVFX : MonoBehaviour
 {
-    public Transform vfxAnchor;
+    [Header("Element VFX Objects")]
+    public GameObject vfxWind;
+    public GameObject vfxThunder;
+    public GameObject vfxFire;
+    public GameObject vfxEarth;
 
-    [Header("Element VFX Prefabs")]
-    public GameObject vfxWindPrefab;
-    public GameObject vfxThunderPrefab;
-    public GameObject vfxFirePrefab;
-    public GameObject vfxEarthPrefab;
-
-    [Header("Offsets")]
-    public Vector3 localPosOffset = Vector3.zero;
-    public Vector3 localRotOffset = Vector3.zero;
-    public Vector3 localScale = Vector3.one;
-
-    GameObject _wind, _thunder, _fire, _earth;
-    Transform Anchor => vfxAnchor != null ? vfxAnchor : transform;
+    [Header("Optional: auto stop particle when disabling")]
+    public bool stopParticlesOnDisable = true;
 
     public void Apply(WeaponInstance inst)
     {
-        EnsureSpawned();
-
         if (inst == null || !inst.hasElementStone)
         {
-            SetActive(false, false, false, false);
+            SetOnly(null);
             return;
         }
 
-        SetActive(
-            inst.elementStone == UpgradeStoneType.Stone_Wind,
-            inst.elementStone == UpgradeStoneType.Stone_Thunder,
-            inst.elementStone == UpgradeStoneType.Stone_Fire,
-            inst.elementStone == UpgradeStoneType.Stone_Earth
-        );
+        switch (inst.elementStone)
+        {
+            case UpgradeStoneType.Stone_Wind: SetOnly(vfxWind); break;
+            case UpgradeStoneType.Stone_Thunder: SetOnly(vfxThunder); break;
+            case UpgradeStoneType.Stone_Fire: SetOnly(vfxFire); break;
+            case UpgradeStoneType.Stone_Earth: SetOnly(vfxEarth); break;
+            default: SetOnly(null); break;
+        }
     }
 
-    void EnsureSpawned()
+    void SetOnly(GameObject target)
     {
-        if (_wind == null && vfxWindPrefab) _wind = Spawn(vfxWindPrefab);
-        if (_thunder == null && vfxThunderPrefab) _thunder = Spawn(vfxThunderPrefab);
-        if (_fire == null && vfxFirePrefab) _fire = Spawn(vfxFirePrefab);
-        if (_earth == null && vfxEarthPrefab) _earth = Spawn(vfxEarthPrefab);
+        SetActiveSafe(vfxWind, target == vfxWind);
+        SetActiveSafe(vfxThunder, target == vfxThunder);
+        SetActiveSafe(vfxFire, target == vfxFire);
+        SetActiveSafe(vfxEarth, target == vfxEarth);
     }
 
-    GameObject Spawn(GameObject prefab)
+    void SetActiveSafe(GameObject go, bool on)
     {
-        var go = Instantiate(prefab, Anchor);
-        go.transform.localPosition = localPosOffset;
-        go.transform.localEulerAngles = localRotOffset;
-        go.transform.localScale = localScale;
-        go.SetActive(false);
-        return go;
-    }
+        if (!go) return;
 
-    void SetActive(bool wind, bool thunder, bool fire, bool earth)
-    {
-        if (_wind) _wind.SetActive(wind);
-        if (_thunder) _thunder.SetActive(thunder);
-        if (_fire) _fire.SetActive(fire);
-        if (_earth) _earth.SetActive(earth);
+        if (!on && stopParticlesOnDisable)
+        {
+            // stop particles cleanly before hiding
+            var ps = go.GetComponentsInChildren<ParticleSystem>(true);
+            for (int i = 0; i < ps.Length; i++)
+                ps[i].Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+        }
+
+        go.SetActive(on);
     }
 }
