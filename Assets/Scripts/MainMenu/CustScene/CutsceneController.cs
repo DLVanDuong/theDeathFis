@@ -41,6 +41,7 @@ public class CutsceneController : MonoBehaviour
     private bool playing = false;
     private bool wasSkipped = false;
 
+
     // 🟢 THÊM CALLBACK TẮT CAMERA CUTSCENE
     void Awake()
     {
@@ -95,6 +96,7 @@ public class CutsceneController : MonoBehaviour
         {
             foreach (var go in deactivateOnEnd)
                 if (go) go.SetActive(false);
+            FindAnyObjectByType<MinimapVisibilityController>()?.OnCutsceneFinished();
             gameObject.SetActive(false);
             return;
         }
@@ -158,6 +160,7 @@ public class CutsceneController : MonoBehaviour
         }
 
         foreach (var go in disableObjects) if (go) go.SetActive(true);
+        FindAnyObjectByType<MinimapVisibilityController>()?.OnCutsceneFinished();
 
         yield return null;
         foreach (var go in deactivateOnEnd) if (go) go.SetActive(false);

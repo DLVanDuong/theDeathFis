@@ -14,9 +14,8 @@ public class Manager : MonoBehaviour
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
         FindPanels();
-    }
-
-    void OnDestroy()
+    }   
+   void OnDestroy()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
@@ -40,9 +39,11 @@ public class Manager : MonoBehaviour
         if (statsPanel != null) statsPanel.SetActive(false);
         if (panelBag != null) panelBag.SetActive(false);
         if (panelEquipment != null) panelEquipment.SetActive(false);
-        if (over != null) over.SetActive(true);
 
-        if (character != null) character.SetActive(true);
+        // ✅ Panel nhân vật: để TẮT lúc bắt đầu (tránh anyOpen=True)
+        if (character != null) character.SetActive(false);
+
+        if (over != null) over.SetActive(true);
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

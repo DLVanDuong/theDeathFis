@@ -661,8 +661,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 320
-  healthGrowthPerLevel: 0.05
-  damageGrowthPerLevel: 0.02
+  healthGrowthPerLevel: 5
+  damageGrowthPerLevel: 2
   enemyData: {fileID: 11400000, guid: 43565d3a00f34304288cc37eca68df7c, type: 2}
   currentHealth: 0
   healthBarUI: {fileID: 4350790198849534980}
